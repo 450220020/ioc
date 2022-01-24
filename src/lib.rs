@@ -1,6 +1,5 @@
 extern crate dashmap;
 extern crate once_cell;
-pub mod com;
 
 #[cfg(test)]
 mod tests {

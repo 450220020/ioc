@@ -53,6 +53,4 @@ pub fn impl_autowired(_attr: TokenStream, _input: TokenStream) -> TokenStream {
 }
 
 #[test]
-fn test_ioc() {
-    
-}
+fn test_ioc() {}

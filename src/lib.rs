@@ -13,18 +13,19 @@ mod com;
 
 
 
-
+///```
 ///#[autowired]
+/// struct EntityObj {
+/// pub key: String,
+///}
 /// static defsingle: Option<EntityObj> = None;
-
 /// // 展开
 /// // macro_rules! defsingle {
 /// //     () => {
 /// //         single_get!( "defsingle", EntityObj)
 /// //     };
 /// // }
-
-
+/// 
 /// #[test]
 /// fn test_one() {
 ///    single_add!(
@@ -35,8 +36,7 @@ mod com;
 ///    );
 ///    println!("注入后获取值 :{:?}", defsingle!().key);
 /// }
-
-
+/// ```
 #[allow(warnings)]
 #[proc_macro_attribute]
 pub fn autowired(_attr: TokenStream, _input: TokenStream) -> TokenStream {
